@@ -1,0 +1,24 @@
+﻿<Window x:Class="FirstProject_CarRaceGameWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FirstProject_CarRaceGameWPF"
+        mc:Ignorable="d"
+        Title="CarRace" Height="550" Width="525"
+        WindowStyle="None" WindowStartupLocation="CenterScreen">
+    <Canvas Background="Black" Name="roadCanvas" Focusable="True" KeyDown="keyDownEvent" KeyUp="keyUpEvent">
+
+        <Rectangle Style="{StaticResource RectangleLinesSetup}" Canvas.Left="237" Canvas.Top="-142"/>
+        <Rectangle  Style="{StaticResource RectangleLinesSetup}" Canvas.Left="237" Canvas.Top="10"/>
+        <Rectangle  Style="{StaticResource RectangleLinesSetup}" Canvas.Left="237" Canvas.Top="198" RadiusY="3.565" RadiusX="3.565"/>
+        <Rectangle  Style="{StaticResource RectangleLinesSetup}" Canvas.Left="237" Canvas.Top="370"/>
+
+
+        <Rectangle Tag="Auto" Width="55" Height="83" Fill="LightBlue" Canvas.Left="102" Canvas.Top="91"/>
+        <Rectangle Tag="Auto" Width="55" Height="83" Fill="PeachPuff" Canvas.Left="361" Canvas.Top="248"/>
+        <Rectangle x:Name="igrac" Width="55" Height="83" Fill="HotPink" Canvas.Left="148" Canvas.Top="393" RenderTransformOrigin="-1.567,1.107"/>
+
+        <Label Name="vrijemeText" Content="Vrijeme: 00 sec " FontSize="16" FontWeight="Bold" Background="White"/>
+    </Canvas>
+</Window>

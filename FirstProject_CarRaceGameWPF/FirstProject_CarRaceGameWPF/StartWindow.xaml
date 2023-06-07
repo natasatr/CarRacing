@@ -1,0 +1,39 @@
+﻿<Window x:Class="FirstProject_CarRaceGameWPF.StartWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FirstProject_CarRaceGameWPF"
+        mc:Ignorable="d"
+        Title="Login" Height="350" Width="450"
+        WindowStyle="None" WindowStartupLocation="CenterScreen" AllowsTransparency="True"
+        Style="{StaticResource loginWindowStyle}">
+    <Border Background="Black" Opacity=".85">
+        <Grid HorizontalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="1" Style="{StaticResource TitleControlStyle}">WELCOME</TextBlock>
+
+            <TextBlock Grid.Row="2" Style="{StaticResource LabelControlStyle}">PLAYER</TextBlock>
+
+            <TextBox Grid.Row="3" Name="playerName"  Style="{StaticResource InputControlStyle}"></TextBox>
+
+            <Button Click="Start" Grid.Row="6" Style="{StaticResource SignButtonStyle}">START</Button>
+
+           
+
+        </Grid>
+    </Border>
+</Window>
